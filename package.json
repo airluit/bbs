@@ -24,7 +24,8 @@
     "web3": "^1.5.1",
     "web3-eth-contract": "^1.5.2"
   },
-  "homepage": "https://airluit.github.io/bbs/",
+
+  "homepage": "https://bitbotsociety.io",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
