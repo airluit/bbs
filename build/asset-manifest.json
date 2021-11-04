@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/tbcnft/static/css/main.741ee34a.chunk.css",
-    "main.js": "/tbcnft/static/js/main.ef9012bb.chunk.js",
-    "main.js.map": "/tbcnft/static/js/main.ef9012bb.chunk.js.map",
-    "runtime-main.js": "/tbcnft/static/js/runtime-main.6e67e627.js",
-    "runtime-main.js.map": "/tbcnft/static/js/runtime-main.6e67e627.js.map",
-    "static/js/2.000a2352.chunk.js": "/tbcnft/static/js/2.000a2352.chunk.js",
-    "static/js/2.000a2352.chunk.js.map": "/tbcnft/static/js/2.000a2352.chunk.js.map",
-    "static/js/3.a64233a7.chunk.js": "/tbcnft/static/js/3.a64233a7.chunk.js",
-    "static/js/3.a64233a7.chunk.js.map": "/tbcnft/static/js/3.a64233a7.chunk.js.map",
-    "index.html": "/tbcnft/index.html",
-    "static/css/main.741ee34a.chunk.css.map": "/tbcnft/static/css/main.741ee34a.chunk.css.map",
-    "static/js/2.000a2352.chunk.js.LICENSE.txt": "/tbcnft/static/js/2.000a2352.chunk.js.LICENSE.txt",
-    "static/media/1.75f03515.png": "/tbcnft/static/media/1.75f03515.png",
-    "static/media/reset.css": "/tbcnft/static/media/PressStart2P-Regular.f2341734.woff"
+    "main.css": "/bbs/static/css/main.646902d8.chunk.css",
+    "main.js": "/bbs/static/js/main.b39641ea.chunk.js",
+    "main.js.map": "/bbs/static/js/main.b39641ea.chunk.js.map",
+    "runtime-main.js": "/bbs/static/js/runtime-main.52eb76c8.js",
+    "runtime-main.js.map": "/bbs/static/js/runtime-main.52eb76c8.js.map",
+    "static/js/2.e12e8ae2.chunk.js": "/bbs/static/js/2.e12e8ae2.chunk.js",
+    "static/js/2.e12e8ae2.chunk.js.map": "/bbs/static/js/2.e12e8ae2.chunk.js.map",
+    "static/js/3.a64233a7.chunk.js": "/bbs/static/js/3.a64233a7.chunk.js",
+    "static/js/3.a64233a7.chunk.js.map": "/bbs/static/js/3.a64233a7.chunk.js.map",
+    "index.html": "/bbs/index.html",
+    "static/css/main.646902d8.chunk.css.map": "/bbs/static/css/main.646902d8.chunk.css.map",
+    "static/js/2.e12e8ae2.chunk.js.LICENSE.txt": "/bbs/static/js/2.e12e8ae2.chunk.js.LICENSE.txt",
+    "static/media/1.75f03515.png": "/bbs/static/media/1.75f03515.png",
+    "static/media/reset.css": "/bbs/static/media/PressStart2P-Regular.f2341734.woff",
+    "static/media/bitbotbanner.81129783.JPG": "/bbs/static/media/bitbotbanner.81129783.JPG"
   },
   "entrypoints": [
-    "static/js/runtime-main.6e67e627.js",
-    "static/js/2.000a2352.chunk.js",
-    "static/css/main.741ee34a.chunk.css",
-    "static/js/main.ef9012bb.chunk.js"
+    "static/js/runtime-main.52eb76c8.js",
+    "static/js/2.e12e8ae2.chunk.js",
+    "static/css/main.646902d8.chunk.css",
+    "static/js/main.b39641ea.chunk.js"
   ]
 }
