@@ -1,0 +1,23 @@
+.header-text {
+    background-color:black;
+    color:white;
+    padding: 50px 0 ;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    
+}
+
+.banner-img {
+    height: auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.mui-select {
+    width: 100px;
+    margin: 10px 0;
+    padding-top: 6px;
+    background-color: white;
+    border-radius: 4px;
+}

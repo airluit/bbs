@@ -6,6 +6,7 @@ import * as s from "./styles/globalStyles";
 import styled from "styled-components";
 import i1 from "./assets/images/1.png";
 import banner from "./assets/images/bitbotbanner.JPG"; //change
+import './AppStyles.css'
 
 export const StyledButton = styled.button`
   padding: 10px;
@@ -72,7 +73,7 @@ function App() {
         gasLimit: "285000",
         to: "0xFF4813187F8b3474C75dB2a5C1915De86f4A7958", //change
         from: blockchain.account,
-        value: blockchain.web3.utils.toWei((.02 * _amount).toString(), "ether"),
+        value: blockchain.web3.utils.toWei((.015 * _amount).toString(), "ether"),
       })
       .once("error", (err) => {
         console.log(err);
@@ -101,16 +102,13 @@ function App() {
   return (
     <s.Screen style={{ backgroundColor: "var(--black)" }}>
       <s.Container flex={1} ai={"center"} style={{ padding: 12 }}>
-        <s.TextTitle
-          style={{ textAlign: "center", fontSize: 36, fontWeight: "bold" }}
-        >
-          The BitBot Society Mint!
-          
-        </s.TextTitle>
+        <div className='header-text'> The BitBot Society Mint</div>
+        
         <s.SpacerMedium />
+        <img className="banner-img" src={banner} />
         <ResponsiveWrapper flex={1} style={{ padding: 12 }}>
           <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg alt={"example"} src={banner} />
+            
             <s.SpacerMedium />
             <s.TextTitle
               style={{ textAlign: "center", fontSize: 26, fontWeight: "bold" }}
@@ -144,7 +142,7 @@ function App() {
             ) : (
               <>
                 <s.TextTitle style={{ textAlign: "center" }}>
-                  1 BitBot NFT costs .02 ETH
+                  1 BitBot NFT costs .015 ETH
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription style={{ textAlign: "center" }}>
