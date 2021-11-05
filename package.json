@@ -1,5 +1,5 @@
 {
-  "name": "frontend_base_dapp",
+  
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,7 +24,7 @@
     "web3": "^1.5.1",
     "web3-eth-contract": "^1.5.2"
   },
-
+  "name": "bbs",
   "homepage": "https://bitbotsociety.io",
   "scripts": {
     "start": "react-scripts start",

@@ -70,7 +70,7 @@ function App() {
       .mint(blockchain.account, _amount)
       .send({
         gasLimit: "285000",
-        to: "0x688db0131c807a3495c23bc1b25726a76ea31f49", //change
+        to: "0xFF4813187F8b3474C75dB2a5C1915De86f4A7958", //change
         from: blockchain.account,
         value: blockchain.web3.utils.toWei((.02 * _amount).toString(), "ether"),
       })
