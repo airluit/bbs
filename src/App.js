@@ -67,7 +67,7 @@ function App() {
     setFeedback("Preparing your BitBot NFT...");
     setClaimingNft(true);
     blockchain.smartContract.methods
-      .mint(blockchain.account, _amount)
+      .mint( _amount)
       .send({
         gasLimit: "285000",
         to: "0xFF4813187F8b3474C75dB2a5C1915De86f4A7958", //change
