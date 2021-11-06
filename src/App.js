@@ -4,6 +4,10 @@ import { connect } from "./redux/blockchain/blockchainActions";
 import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 import i1 from "./assets/images/1.png";
 import banner from "./assets/images/bitbotbanner.JPG"; //change
 import './AppStyles.css'
@@ -57,6 +61,13 @@ export const StyledImg = styled.img`
 function App() {
   const dispatch = useDispatch();
   const blockchain = useSelector((state) => state.blockchain);
+
+  const [selectedAmount, setSelectedAmount] = React.useState(1);
+
+  const handleChange = (event) => {
+    setSelectedAmount(event.target.value);
+  };
+
   const data = useSelector((state) => state.data);
   const [feedback, setFeedback] = useState("What Personality will your Bitbot have?");
   const [claimingNft, setClaimingNft] = useState(false);
@@ -123,7 +134,7 @@ function App() {
             ai={"center"}
             style={{ backgroundColor: "#000000", padding: 12 }}
           >
-            {Number(data.totalSupply +1) == 10000 ? (
+            {Number(data.totalSupply) == 10000 ? (
               <>
                 <s.TextTitle style={{ textAlign: "center" }}>
                   The sale has ended.
@@ -167,49 +178,78 @@ function App() {
                         dispatch(connect());
                         getData();
                       }}
-                    >
-                      CONNECT WALLET
+                    >CONNECT WALLET
                     </StyledButton>
-                    {blockchain.errorMsg !== "" ? (
+                    {blockchain.errorMsg !== '' ? (
                       <>
                         <s.SpacerSmall />
-                        <s.TextDescription style={{ textAlign: "center" }}>
+                        <s.TextDescription style={{ textAlign: 'center' }}>
                           {blockchain.errorMsg}
                         </s.TextDescription>
                       </>
                     ) : null}
                   </s.Container>
                 ) : (
-                  <s.Container ai={"center"} jc={"center"} fd={"row"}>
+                 <>
+                  <div className="mui-select">
+                    <FormControl fullWidth>
+                      <InputLabel id="demo-simple-select-label">Amount</InputLabel>
+                      <Select 
+                        labelId="demo-simple-select-label"
+                        id="demo-simple-select"
+                        value={selectedAmount}
+                        label="Amount"
+                        onChange={handleChange}
+                      >
+                        <MenuItem value={1}>1</MenuItem>
+                        <MenuItem value={2}>2</MenuItem>
+                        <MenuItem value={3}>3</MenuItem>
+                        <MenuItem value={4}>4</MenuItem>
+                        <MenuItem value={5}>5</MenuItem>
+                        <MenuItem value={6}>6</MenuItem>
+                        <MenuItem value={7}>7</MenuItem>
+                        <MenuItem value={8}>8</MenuItem>
+                        <MenuItem value={9}>9</MenuItem>
+                        <MenuItem value={10}>10</MenuItem>
+                        <MenuItem value={11}>11</MenuItem>
+                        <MenuItem value={12}>12</MenuItem>
+                        <MenuItem value={13}>13</MenuItem>
+                      </Select>
+                    </FormControl>
+                    </div>
+                  <s.Container ai={'center'} jc={'center'} fd={'row'}>
                     <StyledButton
                       disabled={claimingNft ? 1 : 0}
                       onClick={(e) => {
-                        e.preventDefault();
-                        claimNFTs(1);
-                        getData();
+                        e.preventDefault()
+                        claimNFTs(selectedAmount)
+                        getData()
                       }}
                     >
-                      {claimingNft ? "Busy..." : "Buy 1 NFT"}
+                      {claimingNft ? 'Busy...' : `Buy ${selectedAmount} NFT`}
                     </StyledButton>
                   </s.Container>
+                    
+                    </>
                 )}
               </>
             )}
           </s.Container>
         </ResponsiveWrapper>
         <s.SpacerSmall />
-        <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
-          <s.TextDescription style={{ textAlign: "center", fontSize: 18 }}>
-            Charity?
+        <s.Container jc={'center'} ai={'center'} style={{ width: '70%' }}>
+          <s.TextDescription style={{ textAlign: 'center', fontSize: 18 }}>
+            Thank you! You are helping support the troops. 
           </s.TextDescription>
           <s.SpacerSmall />
-          <s.TextDescription style={{ textAlign: "center", fontSize: 14 }}>
-            BitBot Rewarded #BBSToken<p/>*.*.*Launching_Soon*.*.*
+          <s.TextDescription style={{ textAlign: 'center', fontSize: 14 }}>
+            Troop Rewarded to help the fallen soldiers #TroopNFT <p />
+            *.*.*Launching_Soon*.*.*
           </s.TextDescription>
         </s.Container>
       </s.Container>
     </s.Screen>
-  );
+  )
 }
 
 export default App;
