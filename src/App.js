@@ -68,10 +68,10 @@ function App() {
     setFeedback("Preparing your BitBot NFT...");
     setClaimingNft(true);
     blockchain.smartContract.methods
-      .mint( _amount)
+      .mint(blockchain.account, _amount)
       .send({
         gasLimit: "285000",
-        to: "0xFF4813187F8b3474C75dB2a5C1915De86f4A7958", //change
+        to: "0xf781d8c26E2A679F4E12443B15F1740f93D07b50", //change
         from: blockchain.account,
         value: blockchain.web3.utils.toWei((.015 * _amount).toString(), "ether"),
       })
@@ -123,7 +123,7 @@ function App() {
             ai={"center"}
             style={{ backgroundColor: "#000000", padding: 12 }}
           >
-            {Number(data.totalSupply) == 10000 ? (
+            {Number(data.totalSupply +1) == 10000 ? (
               <>
                 <s.TextTitle style={{ textAlign: "center" }}>
                   The sale has ended.
