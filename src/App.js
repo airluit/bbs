@@ -137,7 +137,7 @@ function App() {
             >
               <div className='p-text'> {9999-data.totalSupply}/9999 Remaining!</div>
               <div className="p-text"> What Personality will your BitBot have?</div>
-              <div className="p-text"> Pre-sale is live! It will last 36 hours.</div>
+              <div className="p-text"> Pre-sale is live for Metamask users! It will last 36 hours.</div>
             </s.TextTitle>
           </s.Container>
          
@@ -261,7 +261,7 @@ function App() {
           <s.SpacerSmall />
           <s.TextDescription style={{ textAlign: 'center', fontSize: 14 }}>
             BitBot Rewarded #BitBotSociety <p />
-            *.*.*Launching Soon.*.*
+            *.*.*Launching Soon with coinbase and other wallets.*.* 
           </s.TextDescription>
         </s.Container>
       </s.Container>
