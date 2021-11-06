@@ -239,12 +239,12 @@ function App() {
         <s.SpacerSmall />
         <s.Container jc={'center'} ai={'center'} style={{ width: '70%' }}>
           <s.TextDescription style={{ textAlign: 'center', fontSize: 18 }}>
-            Thank you! You are helping support the troops. 
+            Thank you! Welcome to BitBot Society!
           </s.TextDescription>
           <s.SpacerSmall />
           <s.TextDescription style={{ textAlign: 'center', fontSize: 14 }}>
-            Troop Rewarded to help the fallen soldiers #TroopNFT <p />
-            *.*.*Launching_Soon*.*.*
+            BitBot Rewarded #BitBotSociety <p />
+            *.*.*Launching November 6th.*.*
           </s.TextDescription>
         </s.Container>
       </s.Container>
