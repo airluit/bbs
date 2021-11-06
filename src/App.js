@@ -115,7 +115,7 @@ function App() {
   return (
     <s.Screen style={{ backgroundColor: "var(--black)" }}>
       <s.Container flex={1} ai={"center"} style={{ padding: 12 }}>
-        <div className='header-text'> The BitBot Society Mint
+        <div className='header-text'> Mint a Bitbot Society!
         </div>
         
         <s.SpacerMedium />
@@ -123,7 +123,11 @@ function App() {
         <ResponsiveWrapper flex={1} style={{ padding: 12 }}>
           <s.Container flex={1} jc={"center"} ai={"center"}>
           <StyledImg alt={'example'} src={mintImage} />
-            <s.SpacerMedium />
+          <div className="p-text"> 
+          we lowered gas for everyone so we can all
+           beep boop into the meta verse! #BeepboopBitbot
+          </div>
+            
             <s.TextTitle
               style={{ textAlign: "center", fontSize: 26, fontWeight: "bold" }}
             >
@@ -242,7 +246,10 @@ function App() {
         <s.SpacerSmall />
         <s.Container jc={'center'} ai={'center'} style={{ width: '70%' }}>
           <s.TextDescription style={{ textAlign: 'center', fontSize: 18 }}>
-            Thank you! Welcome to BitBot Society!
+          We are securing space and building in the Metaverse for your Bots to beep boop! 
+          Bots don’t use roadmaps, they are programmed with GPS to beep boop
+           directly to the Metaverse!
+
           </s.TextDescription>
           <s.SpacerSmall />
           <s.TextDescription style={{ textAlign: 'center', fontSize: 14 }}>
