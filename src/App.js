@@ -127,7 +127,7 @@ function App() {
             <s.TextTitle
               style={{ textAlign: "center", fontSize: 26, fontWeight: "bold" }}
             >
-              {data.totalSupply}/10000
+              {data.totalSupply}/9999
             </s.TextTitle>
           </s.Container>
           <s.SpacerMedium />
@@ -247,7 +247,7 @@ function App() {
           <s.SpacerSmall />
           <s.TextDescription style={{ textAlign: 'center', fontSize: 14 }}>
             BitBot Rewarded #BitBotSociety <p />
-            *.*.*Launching November 6th.*.*
+            *.*.*Launching Soon.*.*
           </s.TextDescription>
         </s.Container>
       </s.Container>
