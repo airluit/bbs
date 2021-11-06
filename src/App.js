@@ -11,7 +11,7 @@ import Select from '@mui/material/Select';
 
 import i1 from "./assets/images/1.png";
 import mintImage from "./assets/images/mintImage.jpg";
-import banner from "./assets/images/bitbotbanner.JPG"; //change
+import banner from "./assets/images/BANNER.jpg"; //change
 import './AppStyles.css'
 
 export const StyledButton = styled.button`
@@ -122,10 +122,10 @@ function App() {
         <img className="banner-img" src={banner} />
         <ResponsiveWrapper flex={1} style={{ padding: 12 }}>
           <s.Container flex={1} jc={"center"} ai={"center"}>
-          <StyledImg alt={'example'} src={mintImage} />
+          
           <div className="p-text"> 
-          we lowered gas for everyone so we can all
-           beep boop into the meta verse! #BeepboopBitbot
+          We lowered gas for everyone so we can all
+           beep boop into the metaverse! #BeepboopBitbot
           </div>
             
             <s.TextTitle
