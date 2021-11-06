@@ -8,7 +8,9 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+
 import i1 from "./assets/images/1.png";
+import mintImage from "./assets/images/mintImage.jpg";
 import banner from "./assets/images/bitbotbanner.JPG"; //change
 import './AppStyles.css'
 
@@ -113,13 +115,14 @@ function App() {
   return (
     <s.Screen style={{ backgroundColor: "var(--black)" }}>
       <s.Container flex={1} ai={"center"} style={{ padding: 12 }}>
-        <div className='header-text'> The BitBot Society Mint</div>
+        <div className='header-text'> The BitBot Society Mint
+        </div>
         
         <s.SpacerMedium />
         <img className="banner-img" src={banner} />
         <ResponsiveWrapper flex={1} style={{ padding: 12 }}>
           <s.Container flex={1} jc={"center"} ai={"center"}>
-            
+          <StyledImg alt={'example'} src={mintImage} />
             <s.SpacerMedium />
             <s.TextTitle
               style={{ textAlign: "center", fontSize: 26, fontWeight: "bold" }}
