@@ -245,6 +245,22 @@
     }, {
         "inputs": [
             {
+                "internalType": "uint256[]",
+                "name": "quantity",
+                "type": "uint256[]"
+            }, {
+                "internalType": "address[]",
+                "name": "recipient",
+                "type": "address[]"
+            }
+        ],
+        "name": "gift",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    }, {
+        "inputs": [
+            {
                 "internalType": "address",
                 "name": "owner",
                 "type": "address"
@@ -777,4 +793,3 @@
         "type": "receive"
     }
 ]
-

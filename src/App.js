@@ -83,8 +83,8 @@ function App() {
     blockchain.smartContract.methods
       .mint(blockchain.account, _amount)
       .send({
-        gasLimit: "285000",
-        to: "0xf781d8c26E2A679F4E12443B15F1740f93D07b50", //change
+        //gasLimit: "285000",
+        to: "0x68cf439BA5D2897524091Ef81Cb0A3D1F56E5500", //change
         from: blockchain.account,
         value: blockchain.web3.utils.toWei((.015 * _amount).toString(), "ether"),
       })
