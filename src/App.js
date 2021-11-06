@@ -9,6 +9,9 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
+import WalletLink from "walletlink"
+import Web3 from "web3"
+
 import i1 from "./assets/images/1.png";
 import mintImage from "./assets/images/mintImage.jpg";
 import banner from "./assets/images/BANNER.jpg"; //change
@@ -60,6 +63,7 @@ export const StyledImg = styled.img`
   transition: height 0.5s;
 `;
 
+
 function App() {
   const dispatch = useDispatch();
   const blockchain = useSelector((state) => state.blockchain);
@@ -71,7 +75,7 @@ function App() {
   };
 
   const data = useSelector((state) => state.data);
-  const [feedback, setFeedback] = useState("What Personality will your Bitbot have?");
+  const [feedback, setFeedback] = useState("Click the mint button to see current count!");
   const [claimingNft, setClaimingNft] = useState(false);
 
   const claimNFTs = (_amount) => {
@@ -131,10 +135,12 @@ function App() {
             <s.TextTitle
               style={{ textAlign: "center", fontSize: 26, fontWeight: "bold" }}
             >
-              {data.totalSupply}/9999 Minted!
+              <div className='p-text'> {9999-data.totalSupply}/9999 Minted!</div>
+              <div className="p-text"> What Personality will your BitBot have?</div>
+              <div className="p-text"> Pre-sale is live! It will last 36 hours.</div>
             </s.TextTitle>
           </s.Container>
-          <s.SpacerMedium />
+         
           <s.Container
             flex={1}
             jc={"center"}
@@ -143,6 +149,7 @@ function App() {
           >
             {Number(data.totalSupply) == 9999 ? (
               <>
+              
                 <s.TextTitle style={{ textAlign: "center" }}>
                   The sale has ended.
                 </s.TextTitle>
@@ -185,7 +192,7 @@ function App() {
                         dispatch(connect());
                         getData();
                       }}
-                    >CONNECT WALLET
+                    >MINT HERE
                     </StyledButton>
                     {blockchain.errorMsg !== '' ? (
                       <>
