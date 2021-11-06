@@ -135,7 +135,7 @@ function App() {
             <s.TextTitle
               style={{ textAlign: "center", fontSize: 26, fontWeight: "bold" }}
             >
-              <div className='p-text'> {9999-data.totalSupply}/9999 Minted!</div>
+              <div className='p-text'> {9999-data.totalSupply}/9999 Remaining!</div>
               <div className="p-text"> What Personality will your BitBot have?</div>
               <div className="p-text"> Pre-sale is live! It will last 36 hours.</div>
             </s.TextTitle>
