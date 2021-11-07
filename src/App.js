@@ -75,7 +75,7 @@ function App() {
   };
 
   const data = useSelector((state) => state.data);
-  const [feedback, setFeedback] = useState("Click the mint button to see current count!");
+  const [feedback, setFeedback] = useState("What Personality will your BitBot have?");
   const [claimingNft, setClaimingNft] = useState(false);
 
   const claimNFTs = (_amount) => {
@@ -136,7 +136,7 @@ function App() {
               style={{ textAlign: "center", fontSize: 26, fontWeight: "bold" }}
             >
               <div className='p-text'> {9999-data.totalSupply}/9999 Remaining!</div>
-              <div className="p-text"> What Personality will your BitBot have?</div>
+              <div className="p-text"> Click the mint button to see the how many Bitbots remain.</div>
               <div className="p-text"> Pre-sale is live for Metamask users! It will last 36 hours.</div>
             </s.TextTitle>
           </s.Container>
