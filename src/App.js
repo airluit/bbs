@@ -137,7 +137,7 @@ function App() {
             >
               <div className='p-text'> {9999-data.totalSupply}/9999 Remaining!</div>
               <div className="p-text"> Click the mint button to see how many BitBots remain!</div>
-              <div className="p-text"> Pre-sale is live for Metamask users! It will last 36 hours.</div>
+              <div className="p-text"> Pre-sale has ended. Please check back for updates</div>
             </s.TextTitle>
           </s.Container>
          
